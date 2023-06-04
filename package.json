@@ -24,6 +24,8 @@
     "react-cookie": "^4.1.1",
     "react-dom": "latest",
     "react-icons": "^4.9.0",
+    "react-popper-tooltip": "^4.4.2",
+    "react-tooltip": "^5.13.1",
     "react-wrap-balancer": "^0.1.5"
   },
   "devDependencies": {

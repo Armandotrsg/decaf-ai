@@ -5,6 +5,40 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { ellipsizeAddress } from '../utils/SolanaFunctions';
 import { Cookies, useCookies } from 'react-cookie';
 import { useEffect } from 'react';
+import React from 'react';
+import { Tooltip } from 'react-tooltip'
+import 'react-popper-tooltip/dist/styles.css';
+
+
+// quiero hacer que estos botones despliguen un tooltip que digan que pronto estaran disponibles
+
+
+const ContactManager = () => {
+  return (
+    <div className="flex flex-col items-center">
+      <button
+        className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500  w-full text-left rounded-lg hover:animate-spin-slow duration-1000 ease-in-out focus:outline-none mb-4"
+        id="administrarContactos"
+        data-tooltip-content="Próximamente"
+        data-tooltip-id="tooltip-administrarContactos"
+      >
+        Administrar contactos
+      </button>
+      <Tooltip id="tooltip-administrarContactos" />
+
+      <button
+        className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg w-full text-left hover:animate-spin-slow focus:outline-none"
+        id="crearContacto"
+        data-tooltip-content="Próximamente"
+        data-tooltip-id="tooltip-crearContacto"
+      >
+        Añadir contacto
+      </button>
+      <Tooltip id="tooltip-crearContacto" />
+    </div>
+  );
+}
+
 
 type Contact = {
   id: number;
@@ -72,12 +106,7 @@ function Contacts() {
       <div className="flex flex-col w-full items-center">
         <div className="flex-grow" /> {/* Spacer to push the buttons to the bottom */}
         <div className="flex flex-col justify-center w-full items-center">
-          <Button onClick={handleManageContacts} className="my-4 w-full">
-            Administrar Contactos
-          </Button>
-          <Button onClick={handleCreateContact} className="w-full" variant="secondary">
-            Crear Contacto
-          </Button>
+          <ContactManager />
         </div>
         <div className="flex flex-col items-center mt-4">
 
