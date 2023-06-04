@@ -38,14 +38,13 @@ export default function Login() {
       </div>
       <div className="flex flex-col items-center justify-center w-full max-w-md p-8 rounded-xl shadow-lg bg-gradient-to-tr from-violet-900 to-pink-900 shadow-violet-dark">
         <h1 className="mb-4 text-3xl font-bold text-center text-white">
-          Connect to your Phantom Wallet
+          Conectate a tu Phantom Wallet
         </h1>
         <p className="mb-8 text-gray-200 text-center">
-          Click the button below to connect to your Phantom wallet and start
-          using our app.
+          Da ckick en el botón de abajo para conectar tu wallet
         </p>
         <button className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg duration-300 hover:shadow-pink-500 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 hover:animate-spin-slow" onClick={handleClick}>
-          Connect to Phantom
+          Conecta tu wallet
         </button>
         {
           error && <p className="mt-4 text-sm text-red-500">{error}</p>
