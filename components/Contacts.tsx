@@ -17,7 +17,7 @@ const ContactManager = () => {
   return (
     <div className="flex flex-col items-center">
       <button
-        className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500  w-full text-left rounded-lg hover:animate-spin-slow duration-1000 ease-in-out focus:outline-none mb-4"
+        className="px-4 py-2 text-md font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500  w-full text-left rounded-lg hover:animate-spin-slow duration-1000 ease-in-out focus:outline-none mb-4"
         id="administrarContactos"
         data-tooltip-content="Próximamente"
         data-tooltip-id="tooltip-administrarContactos"
@@ -27,7 +27,7 @@ const ContactManager = () => {
       <Tooltip id="tooltip-administrarContactos" />
 
       <button
-        className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg w-full text-left hover:animate-spin-slow focus:outline-none"
+        className="px-4 py-2 text-md font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg w-full text-left hover:animate-spin-slow focus:outline-none"
         id="crearContacto"
         data-tooltip-content="Próximamente"
         data-tooltip-id="tooltip-crearContacto"
