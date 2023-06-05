@@ -49,7 +49,7 @@ export default function Login() {
             Conéctate a tu Phantom Wallet
           </h1>
           <p className="mb-8 text-gray-200 text-center">
-            Da ckick en el botón de abajo para conectar tu wallet
+            Da click en el botón de abajo para conectar tu wallet
           </p>
           <button className="px-8 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg duration-300 hover:shadow-pink-500 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 hover:animate-spin-slow" onClick={handleClick}>
             Conecta tu wallet
