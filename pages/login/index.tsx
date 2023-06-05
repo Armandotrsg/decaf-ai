@@ -46,7 +46,7 @@ export default function Login() {
         </div>
         <div className="flex flex-col items-center justify-center w-full max-w-md p-8 rounded-xl shadow-lg bg-gradient-to-tr from-violet-900 to-pink-900 shadow-violet-dark">
           <h1 className="mb-4 text-3xl font-bold text-center text-white">
-            Conectate a tu Phantom Wallet
+            Conéctate a tu Phantom Wallet
           </h1>
           <p className="mb-8 text-gray-200 text-center">
             Da ckick en el botón de abajo para conectar tu wallet
